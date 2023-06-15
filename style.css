@@ -1,0 +1,61 @@
+:root {
+  --principal-color: #ff5733;
+  --secondary-color: #d5465c;
+  --terciary-color: #ab3585 ;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div{
+  animation: loader-animation 1.5s ease-in-out infinite;
+}
+
+@keyframes loader-animation {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0);
+  }
+}
+
+#box{
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+#loading-circle-1{
+  border-radius: 100%;
+  background-color: var(--principal-color);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  animation-delay: 0s;
+}
+
+#loading-circle-2{
+  border-radius: 100%;
+  background-color: var(--secondary-color);
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation-delay: 0.5s;
+}
+
+#loading-circle-3{
+  border-radius: 100%;
+  background-color: var(--terciary-color);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-delay: 1s;
+}
